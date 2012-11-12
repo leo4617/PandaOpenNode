@@ -1,4 +1,5 @@
 <?php
+ini_set('date.timezone','Asia/Shanghai');
 global $cfg;
 $cfg = include('config.php');
 include_once('monitor.php');
