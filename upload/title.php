@@ -36,7 +36,7 @@ class title{
 		} else {
 			$target_charset = 'gbk';
 		}
-		$content = str_ireplace('<head>','<head><meta http-equiv=Content-Type content="text/html;charset='.$target_charset.'">',$content);
+		$content = str_ireplace('<head','<head><meta http-equiv=Content-Type content="text/html;charset='.$target_charset.'">',$content);
 		/* 编码识别结束 */
 		@$doc->loadHTML($content);
 		if(!empty($doc)){
